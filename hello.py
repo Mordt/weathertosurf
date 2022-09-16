@@ -1,0 +1,2 @@
+msg = "gloop"
+print(msg)
