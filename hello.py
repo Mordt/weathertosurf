@@ -1,4 +1,6 @@
 from flask import Flask, jsonify
+import requests
+
 app = Flask(__name__)
 
 """
@@ -27,8 +29,8 @@ def index():
     return "Hello World"
 """
 
-@app.route("/", methods = ["GET"])
+@app.route("/")
 def queryBOM():
-    r = requests.get('http://www.bom.gov.au/fwo/IDN60701/IDN60701.066051.json')
+    r = requests.get('http://www.google.com')
     return r.text
     
